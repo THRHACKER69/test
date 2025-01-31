@@ -18,7 +18,7 @@ if not os.path.exists(csv_path):
 # Initialize Hand Tracker
 tracker = HandTracker()
 cap = cv2.VideoCapture(0)
-label = "Z"  # Change this for different gestures
+label = input("enter name of the gesture:")  # Change this for different gestures
 
 # Open CSV once to avoid frequent writes
 with open(csv_path, 'a', newline='') as f:
